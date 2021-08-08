@@ -88,7 +88,7 @@ function CalcularHorarios() {
         for (var i = materias.length - 1; i > 0; i--) {
             if (contadores[i] == 0) {
                 contadores[i - 1]++
-                    if (contadores[i - 1] > materias[i - 1].horarios.length) {
+                    if (contadores[i - 1] > materias[i - 1].horarios.length - 1) {
                         contadores[i - 1] = 0
                         continue
                     }
